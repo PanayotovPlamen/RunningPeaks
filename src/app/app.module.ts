@@ -4,19 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ActivitiesComponent } from './components/activities/activities.component';
-import { TrainingcalendarComponent } from './components/trainingcalendar/trainingcalendar.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TrainingLogComponent } from './components/training-log/training-log.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ActivitiesComponent,
-    TrainingcalendarComponent
+    DashboardComponent,
+    TrainingLogComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, FooterComponent]
